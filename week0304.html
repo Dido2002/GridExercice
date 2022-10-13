@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+            font-family:'Oswald', sans-serif;
+        }
+        :root{
+            --main-color:#dfb15c;
+        }
+        .container{
+            display:grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-auto-rows:4rem;
+            gap:0 2rem;
+        }
+        .box{
+            display:flex;
+            flex-direction:column;
+            justify-content:space-evenly ;
+            align-items:center;
+            height: 100%;
+            /* border:1px solid black; */
+        }
+        .box:nth-child(1){
+            grid-row: 1/8;
+            grid-column: 1/7;
+            background: url("/HTML,CSS,JS Advanced/task4/7-1.jpg");
+            background-position: center center;
+            background-size: cover;
+        }
+        .box:nth-child(2){
+            grid-row:8/14;
+            grid-column: 1/7;
+            background-color: var(--main-color);
+        }
+        .box:nth-child(3){
+            grid-row:2/5;
+            grid-column: 2/4;
+        }
+        .box:nth-child(4){
+            grid-row:6/9;
+            grid-column: 2/4;
+        }
+        .box:nth-child(5){
+            grid-row:10/13;
+            grid-column: 2/4;
+        }
+        .box:nth-child(6){
+            grid-row:8/13;
+            grid-column: 4/6;
+        }
+        .cbox{
+            background-color: white;
+            text-align: center;
+            padding:1.5rem;
+        }
+        .cbox i{
+            background-color: var(--main-color);
+            padding:1.2rem;
+            color:white;
+            margin-bottom:0.5rem;
+            border-radius: 50%;
+        }
+        .main-box{
+            color:white;
+        }
+        .main-box h1{
+            align-self:flex-start;
+            font-size:3rem;
+        }
+        .main-box button{
+            padding:12px 16px;
+            align-self:flex-start;
+            border:3px solid white;
+            background: unset;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box cbox">
+            <i class="fa fa-pencil"></i>
+            <h2>Photos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="box cbox">
+            <i class="fa fa-pencil"></i>
+            <h2>Photos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ipsa!</p>
+        </div>
+        <div class="box cbox">
+            <i class="fa fa-pencil"></i>
+            <h2>Photos</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, ipsa!</p>
+        </div>
+        <div class="box main-box">
+            <h1>Photography company</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique dolorem quam molestiae voluptas voluptatum dolor porro laboriosam, quod amet adipisci. Dignissimos quia ullam nulla, officiis facere quisquam! Numquam, dolores nemo.</p>
+            <button>LEARN MORE</button>
+        </div>
+        
+    </div>
+</body>
+</html>
